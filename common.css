@@ -1,0 +1,124 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 40;
+}
+
+nav {
+    background: black;
+}
+
+nav.sticky ul li a {
+    color: #fff;
+}
+
+nav a {
+    padding: 10px;
+}
+
+nav img {
+width: 70px;    
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    /* padding-top: 1%; */
+    /* padding-bottom: 1%; */
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;    
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fdb713;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #fdb713;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        position: absolute;
+        color: #ffffff;
+        margin: 10px;
+        padding-right: 10%;
+        padding-left: 12%;
+        font-size: 22px;
+        cursor: pointer; 
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+@media(max-width: 650px) {
+    nav .fa {
+        padding-left: 15%;
+    }
+}
+
+@media(max-width: 500px) {
+    nav .fa {
+        padding-left: 18%;
+    }
+} 
+
+@media(max-width: 420px) {
+    nav .fa {
+        padding-left: 25%;
+    }
+}
+@media(max-width: 300px) {
+    nav .fa {
+        padding-left: 38%;
+    }
+}

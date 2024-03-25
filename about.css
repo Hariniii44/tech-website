@@ -1,0 +1,27 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    min-height: 120vh;
+    background-color: #ffffff;
+}
+
+.who-we-are {
+    min-height: 120vh;
+    width: 100%;  
+    background-image: url(images/who-we-are.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.what-we-do {
+    min-height: 120vh;
+    width: 100%;  
+    background-image: url(images/what-we-do.png);
+    background-position: center;
+    background-size: cover;
+}
